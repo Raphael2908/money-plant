@@ -10,19 +10,23 @@ Done
 - [X] Adds receipts
 - [X] Edit receipts
 - [X] Delete receipts
-- [X] Works Offline
-- [X] Receipts include GST and Service Charge
-- [X] ✨  No Authentication Needed ✨      
+- [X] Works offline
+- [X] Receipts include GST and service charge
+- [X] ✨ No sign up needed ✨      
 
-Todo
+Todo for release
+- [ ] Introduction screen (feat)
+- [ ] App settings (feat)
+- [ ] App logo (feat)
+- [ ] App color theme
+      
+Improvements (required for release)
+- [ ] Improve Display UI
+- [ ] Improve Edit spending from UI
+- [ ] Tests
+
+Backlog
 - [ ] See past daily spending (epic)
 - [ ] Set a budget for the day (epic)
 - [ ] Backend to store data in the cloud (epic)
 - [ ] Optional authentication (epic)
-- [ ] Introduction screen (feat)
-- [ ] App settings (feat)
-      
-Improvements
-
-- [ ] Improve Display UI
-- [ ] Improve Edit spending from UI
