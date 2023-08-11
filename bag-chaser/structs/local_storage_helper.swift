@@ -11,8 +11,10 @@ struct Local_Storage_helper{
     
     func save(data: Codable, key: String){
         let encoded = try? JSONEncoder().encode(data)
-        UserDefaults.standard.set(encoded, forKey: key)
+        UserDefaults.standard.set(try? encoded, forKey: key)
         print("Saved item " + key)
+//        print(UserDefaults.standard.dictionaryRepresentation())
+
     }
     
     func load_daily_spending (key: String) -> Daily_Spending?{
