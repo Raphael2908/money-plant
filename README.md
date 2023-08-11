@@ -21,7 +21,7 @@ Todo for release
 - [ ] App color theme
       
 Improvements (required for release)
-- [ ] Improve Display UI
+- [X] Improve Display UI
 - [ ] Improve Edit spending from UI
 - [ ] Tests
 
