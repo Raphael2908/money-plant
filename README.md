@@ -22,7 +22,7 @@ Todo for release
       
 Improvements (required for release)
 - [X] Improve Display UI
-- [ ] Improve Edit spending from UI
+- [X] Improve Edit spending from UI
 - [ ] Tests
 
 Backlog

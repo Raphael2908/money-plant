@@ -33,7 +33,6 @@ struct Edit_Spending_Card: View {
         _today_total_spending = today_total_spending
         
         spending_index = item_index
-        print(item_index)
         let spending: Spending = Local_Storage_helper().load_daily_spending(
             key: storage_key
         )!.receipts[item_index]

@@ -16,11 +16,6 @@ struct Spending_Card: View {
     var service_charge: Float
     var additional_costs: Float
     var total: Float
-    var storage_key: String
-    var card_index: Int
-    
-    @Binding var today_total_spending: Float // Sync's total spending with Home view
-    @State var IsShowingEditSheet: Bool = false
     
     init(base_amount: Float, gst: Float, service_charge: Float, additional_costs: Float, total: Float, card_index: Int, storage_key: String,         today_total_spending: Binding<Float>) {
         self.base_amount = base_amount
@@ -28,10 +23,6 @@ struct Spending_Card: View {
         self.service_charge = service_charge
         self.additional_costs = additional_costs
         self.total = total
-        
-        self.card_index = card_index
-        self.storage_key = storage_key
-        _today_total_spending = today_total_spending
     }
     
     var body: some View {
