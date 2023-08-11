@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B518F4BE2A84B7650025F7E1 /* SpendingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518F4BD2A84B7650025F7E1 /* SpendingCard.swift */; };
 		B58C9FA72A82BCCD00D06630 /* AddSpending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FA62A82BCCD00D06630 /* AddSpending.swift */; };
 		B58C9FA92A82BD1400D06630 /* daily_spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FA82A82BD1400D06630 /* daily_spending.swift */; };
 		B58C9FAB2A82BD2900D06630 /* spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FAA2A82BD2900D06630 /* spending.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B518F4BD2A84B7650025F7E1 /* SpendingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingCard.swift; sourceTree = "<group>"; };
 		B58C9FA62A82BCCD00D06630 /* AddSpending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpending.swift; sourceTree = "<group>"; };
 		B58C9FA82A82BD1400D06630 /* daily_spending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daily_spending.swift; sourceTree = "<group>"; };
 		B58C9FAA2A82BD2900D06630 /* spending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spending.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				B58C9FA62A82BCCD00D06630 /* AddSpending.swift */,
 				B58C9FAC2A82C10F00D06630 /* DisplaySpending.swift */,
 				B5F605262A837FA10029D991 /* EditSpending.swift */,
+				B518F4BD2A84B7650025F7E1 /* SpendingCard.swift */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				B58C9FA72A82BCCD00D06630 /* AddSpending.swift in Sources */,
 				B5F5BC892A81307D0035ED40 /* ContentView.swift in Sources */,
 				B5F605272A837FA10029D991 /* EditSpending.swift in Sources */,
+				B518F4BE2A84B7650025F7E1 /* SpendingCard.swift in Sources */,
 				B58C9FA92A82BD1400D06630 /* daily_spending.swift in Sources */,
 				B5F5BC872A81307D0035ED40 /* bag_chaserApp.swift in Sources */,
 				B58C9FAD2A82C11000D06630 /* DisplaySpending.swift in Sources */,
