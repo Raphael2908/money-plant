@@ -19,8 +19,11 @@ struct Display_Spending: View {
     let dateFormatter = DateFormatter()
     var storage_key: String
     
-    @State private var selectedSpending: Int? = nil
+    @State private var IsShowingEditSheet: Bool = false
+    @State var card_index: Int? = nil
+    
     @Binding var today_total_spending: Float // Sync's total spending with Home view
+    
     
     init (today_total_spending: Binding<Float>) {
         dateFormatter.dateFormat = "dd-MM-yyyy"
@@ -38,20 +41,30 @@ struct Display_Spending: View {
                     gst: spendings[spending_index].gst,
                     service_charge: spendings[spending_index].service_charge,
                     additional_costs: spendings[spending_index].additional_costs,
-                    total: spendings[spending_index].total
+                    total: spendings[spending_index].total,
+                    
+                    card_index: spending_index,
+                    storage_key: storage_key,
+                    today_total_spending: $today_total_spending
                 ).onTapGesture {
-                    self.selectedSpending = spending_index
-                }.sheet(item: self.$selectedSpending) {_ in
-                    Edit_Spending_Card(storage_key: storage_key, today_total_spending: $today_total_spending, item_index: self.selectedSpending ?? 0)
+                    IsShowingEditSheet = true
+                    card_index = spending_index
+                    
                 }.padding(5)
-           }
-            .onDelete { indexSet in
+           }.onDelete { indexSet in
                 LS.destroy_spending(key: storage_key, indexSet: indexSet)
                 today_total_spending = LS.load_daily_spending(key: storage_key)!.total
             }
             .listRowInsets(EdgeInsets())// Removes list padding
             .listRowSeparator(.hidden)
             .shadow(radius: 5, x: 0, y: 4)
+            .sheet(isPresented: $IsShowingEditSheet, onDismiss: {IsShowingEditSheet = false}) {
+                Edit_Spending_Card(
+                    storage_key: storage_key,
+                    today_total_spending: $today_total_spending,
+                    item_index: self.card_index ?? 0
+                ).presentationDetents([.medium])
+            }
             
         }
         .scrollContentBackground(.hidden)
