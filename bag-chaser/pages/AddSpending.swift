@@ -39,13 +39,13 @@ struct Add_Spending_Card: View {
                         value: $base_amount,
                         format: .number,
                         prompt: Text("Amount")
-                    ).keyboardType(.numberPad)
+                    ).keyboardType(.decimalPad)
                     
                     TextField(
                         "Additional Costs",
                         value: $additional_costs,
                         format: .number
-                    ).keyboardType(.numberPad)
+                    ).keyboardType(.decimalPad)
                 }
                 
                 Section{
@@ -55,8 +55,8 @@ struct Add_Spending_Card: View {
                         TextField(
                             "Service Charge",
                             value: $service_charge,
-                            format: .percent
-                        ).keyboardType(.numberPad)
+                            format: .percent.precision(.significantDigits(2))
+                        ).keyboardType(.decimalPad)
                     }
                 }
                 Button(action: {

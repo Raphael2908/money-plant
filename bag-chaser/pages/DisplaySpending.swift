@@ -9,12 +9,6 @@ import Foundation
 
 import SwiftUI
 
-struct Spending_Card: View {
-    var body: some View {
-        Text("Spending Card")
-    }
-}
-
 extension Int: Identifiable {
     public var id: Int { return self }
 }
@@ -39,32 +33,29 @@ struct Display_Spending: View {
         let spendings: Array = LS.load_daily_spending(key: storage_key)!.receipts
         List{
             ForEach(spendings.indices, id: \.self) { spending_index in
-                HStack{
-                    VStack{
-                            Text("Base Amount: \(spendings[spending_index].base_amount, specifier: "%.2f")")
-                            Text("Gst: \(spendings[spending_index].gst * 100, specifier: "%.0f")%")
-                            Text("Service Charge: \(spendings[spending_index].service_charge * 100, specifier: "%.0f")%")
-                            Text("Additional Costs: \(spendings[spending_index].additional_costs, specifier: "%.2f")")
-                            Text("Total: \(spendings[spending_index].total, specifier: "%.2f")").padding(10)
-                    }
-                    Button(action: {
-                        self.selectedSpending = spending_index
-                    
-                    }, label: {
-                        Text("Edit")
-                    }).sheet(item: self.$selectedSpending) {_ in
-                        Edit_Spending_Card(storage_key: storage_key, today_total_spending: $today_total_spending, item_index: self.selectedSpending ?? 0)
-                    }
-                }
+                Spending_Card(
+                    base_amount: spendings[spending_index].base_amount,
+                    gst: spendings[spending_index].gst,
+                    service_charge: spendings[spending_index].service_charge,
+                    additional_costs: spendings[spending_index].additional_costs,
+                    total: spendings[spending_index].total
+                ).onTapGesture {
+                    self.selectedSpending = spending_index
+                }.sheet(item: self.$selectedSpending) {_ in
+                    Edit_Spending_Card(storage_key: storage_key, today_total_spending: $today_total_spending, item_index: self.selectedSpending ?? 0)
+                }.padding(5)
            }
             .onDelete { indexSet in
                 LS.destroy_spending(key: storage_key, indexSet: indexSet)
                 today_total_spending = LS.load_daily_spending(key: storage_key)!.total
             }
-     
-        }.scrollContentBackground(.hidden)
-           
-
+            .listRowInsets(EdgeInsets())// Removes list padding
+            .listRowSeparator(.hidden)
+            .shadow(radius: 5, x: 0, y: 4)
+            
+        }
+        .scrollContentBackground(.hidden)
+        .listStyle(.plain)
 
     }
 }

@@ -33,7 +33,9 @@ struct Home: View {
             Text("Today's Spending")
                 .font(.largeTitle)
             Text("$\(today_total_spending, specifier: "%.2f")").font(.title)
-
+            
+            Divider()
+            
             Display_Spending(today_total_spending: $today_total_spending)
 
             Spacer()
@@ -51,7 +53,7 @@ struct Home: View {
                 Add_Spending_Card(storage_key: storage_key, today_total_spending: $today_total_spending,isShowingSheet: $isShowingSheet )
             }
             
-        }.padding()
+        }
     }
     
 }
