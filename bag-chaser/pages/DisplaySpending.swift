@@ -52,8 +52,11 @@ struct Display_Spending: View {
                     
                 }.padding(5)
            }.onDelete { indexSet in
-                LS.destroy_spending(key: storage_key, indexSet: indexSet)
-                today_total_spending = LS.load_daily_spending(key: storage_key)!.total
+               if indexSet.first == nil {
+                   // Throw error
+               }
+               LS.destroy_spending(key: storage_key, index: indexSet.first!)
+               today_total_spending = LS.load_daily_spending(key: storage_key)!.total
             }
             .listRowInsets(EdgeInsets())// Removes list padding
             .listRowSeparator(.hidden)

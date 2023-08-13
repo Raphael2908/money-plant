@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "98DA9A26-1800-4506-9197-E052F42E0629",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:bag-chaser.xcodeproj",
+      "identifier" : "B5F5BC822A81307D0035ED40",
+      "name" : "bag-chaser"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:bag-chaser.xcodeproj",
+        "identifier" : "B52716962A861FDB00963AD7",
+        "name" : "bag-chaser-tests"
+      }
+    }
+  ],
+  "version" : 1
+}
