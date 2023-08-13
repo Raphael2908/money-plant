@@ -11,7 +11,7 @@ struct Local_Storage_helper{
     
     func save(data: Codable, key: String){
         let encoded = try? JSONEncoder().encode(data)
-        UserDefaults.standard.set(try? encoded, forKey: key)
+        UserDefaults.standard.set(encoded, forKey: key)
         print("Saved item " + key)
 //        print(UserDefaults.standard.dictionaryRepresentation())
 
@@ -28,16 +28,20 @@ struct Local_Storage_helper{
         }
     }
     
-    func destroy_spending(key: String, indexSet: IndexSet){
+    func destroy_spending(key: String, index: Int){
         // Remove a receipt from a daily spending
         let data = UserDefaults.standard.object(forKey: key) as? Data
+        
+        guard data != nil else {
+            fatalError("data not found")
+        }
+        
         var daily_spending: Daily_Spending = try! JSONDecoder().decode(Daily_Spending.self, from: data!)
         
-        daily_spending.receipts.remove(atOffsets: indexSet)
-        
+        daily_spending.receipts.remove(at: index)
         save(data: daily_spending, key: key)
-        
-        print("Removed spending at index: \(daily_spending)")
+          
+        print("Removed spending at index: \(index)")
     }
     
     func edit_spending(key: String, index: Int, new_spending: Spending){
@@ -47,9 +51,5 @@ struct Local_Storage_helper{
         daily_spending.receipts[index] = new_spending
         save(data: daily_spending, key: key)
         print("Updated spending at index \(index) to \(new_spending)")
-    }
-    
-    func destroy_daily_spending(key: String){
-        // Remove a receipt from a daily spending
     }
 }

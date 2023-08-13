@@ -8,7 +8,7 @@
 import Foundation
 
 // A class to describe a spending
-struct Spending: Codable {
+struct Spending: Codable, Equatable {
     var base_amount: Float
     var have_gst: Bool = true
     var gst: Float// Gst is in percent

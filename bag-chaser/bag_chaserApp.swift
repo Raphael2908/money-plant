@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 @main
 struct bag_chaserApp: App {
     

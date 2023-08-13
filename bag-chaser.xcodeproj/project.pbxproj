@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		B518F4BE2A84B7650025F7E1 /* SpendingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B518F4BD2A84B7650025F7E1 /* SpendingCard.swift */; };
+		B52716A62A8621AE00963AD7 /* spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FAA2A82BD2900D06630 /* spending.swift */; };
+		B52716A72A8621B300963AD7 /* daily_spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FA82A82BD1400D06630 /* daily_spending.swift */; };
+		B52716A92A86282F00963AD7 /* local_storage_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F5BCB02A8157A50035ED40 /* local_storage_helper.swift */; };
 		B58C9FA72A82BCCD00D06630 /* AddSpending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FA62A82BCCD00D06630 /* AddSpending.swift */; };
 		B58C9FA92A82BD1400D06630 /* daily_spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FA82A82BD1400D06630 /* daily_spending.swift */; };
 		B58C9FAB2A82BD2900D06630 /* spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FAA2A82BD2900D06630 /* spending.swift */; };
 		B58C9FAD2A82C11000D06630 /* DisplaySpending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FAC2A82C10F00D06630 /* DisplaySpending.swift */; };
+		B5BB598A2A88FC3A00203207 /* local_storage_helper_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52716A02A86200B00963AD7 /* local_storage_helper_test.swift */; };
 		B5F5BC872A81307D0035ED40 /* bag_chaserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F5BC862A81307D0035ED40 /* bag_chaserApp.swift */; };
 		B5F5BC892A81307D0035ED40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F5BC882A81307D0035ED40 /* ContentView.swift */; };
 		B5F5BC8B2A81307E0035ED40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5F5BC8A2A81307E0035ED40 /* Assets.xcassets */; };
@@ -21,14 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B5F5BC942A81307E0035ED40 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B5F5BC7B2A81307D0035ED40 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5F5BC822A81307D0035ED40;
-			remoteInfo = "bag-chaser";
-		};
-		B5F5BC9E2A81307E0035ED40 /* PBXContainerItemProxy */ = {
+		B527169B2A861FDB00963AD7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5F5BC7B2A81307D0035ED40 /* Project object */;
 			proxyType = 1;
@@ -39,37 +36,31 @@
 
 /* Begin PBXFileReference section */
 		B518F4BD2A84B7650025F7E1 /* SpendingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingCard.swift; sourceTree = "<group>"; };
+		B52716972A861FDB00963AD7 /* bag-chaser-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bag-chaser-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52716A02A86200B00963AD7 /* local_storage_helper_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = local_storage_helper_test.swift; sourceTree = "<group>"; };
 		B58C9FA62A82BCCD00D06630 /* AddSpending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpending.swift; sourceTree = "<group>"; };
 		B58C9FA82A82BD1400D06630 /* daily_spending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daily_spending.swift; sourceTree = "<group>"; };
 		B58C9FAA2A82BD2900D06630 /* spending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spending.swift; sourceTree = "<group>"; };
 		B58C9FAC2A82C10F00D06630 /* DisplaySpending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySpending.swift; sourceTree = "<group>"; };
+		B5BB598B2A89084400203207 /* bag-chaser.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "bag-chaser.xctestplan"; sourceTree = "<group>"; };
 		B5F5BC832A81307D0035ED40 /* bag-chaser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bag-chaser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F5BC862A81307D0035ED40 /* bag_chaserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bag_chaserApp.swift; sourceTree = "<group>"; };
 		B5F5BC882A81307D0035ED40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5F5BC8A2A81307E0035ED40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5F5BC8D2A81307E0035ED40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B5F5BC932A81307E0035ED40 /* bag-chaserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bag-chaserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5F5BC9D2A81307E0035ED40 /* bag-chaserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bag-chaserUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5F5BCB02A8157A50035ED40 /* local_storage_helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = local_storage_helper.swift; sourceTree = "<group>"; };
 		B5F605262A837FA10029D991 /* EditSpending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSpending.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B52716942A861FDB00963AD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5F5BC802A81307D0035ED40 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5F5BC902A81307E0035ED40 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5F5BC9A2A81307E0035ED40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B52716982A861FDB00963AD7 /* bag-chaser-tests */ = {
+			isa = PBXGroup;
+			children = (
+				B52716A02A86200B00963AD7 /* local_storage_helper_test.swift */,
+			);
+			path = "bag-chaser-tests";
+			sourceTree = "<group>";
+		};
 		B58C9FA52A82BCA300D06630 /* pages */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +93,9 @@
 		B5F5BC7A2A81307D0035ED40 = {
 			isa = PBXGroup;
 			children = (
+				B5BB598B2A89084400203207 /* bag-chaser.xctestplan */,
 				B5F5BC852A81307D0035ED40 /* bag-chaser */,
+				B52716982A861FDB00963AD7 /* bag-chaser-tests */,
 				B5F5BC842A81307D0035ED40 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,8 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				B5F5BC832A81307D0035ED40 /* bag-chaser.app */,
-				B5F5BC932A81307E0035ED40 /* bag-chaserTests.xctest */,
-				B5F5BC9D2A81307E0035ED40 /* bag-chaserUITests.xctest */,
+				B52716972A861FDB00963AD7 /* bag-chaser-tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +142,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B52716962A861FDB00963AD7 /* bag-chaser-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B527169F2A861FDB00963AD7 /* Build configuration list for PBXNativeTarget "bag-chaser-tests" */;
+			buildPhases = (
+				B52716932A861FDB00963AD7 /* Sources */,
+				B52716942A861FDB00963AD7 /* Frameworks */,
+				B52716952A861FDB00963AD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B527169C2A861FDB00963AD7 /* PBXTargetDependency */,
+			);
+			name = "bag-chaser-tests";
+			productName = "bag-chaser-tests";
+			productReference = B52716972A861FDB00963AD7 /* bag-chaser-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B5F5BC822A81307D0035ED40 /* bag-chaser */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5F5BCA72A81307E0035ED40 /* Build configuration list for PBXNativeTarget "bag-chaser" */;
@@ -159,42 +177,6 @@
 			productReference = B5F5BC832A81307D0035ED40 /* bag-chaser.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5F5BC922A81307E0035ED40 /* bag-chaserTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5F5BCAA2A81307E0035ED40 /* Build configuration list for PBXNativeTarget "bag-chaserTests" */;
-			buildPhases = (
-				B5F5BC8F2A81307E0035ED40 /* Sources */,
-				B5F5BC902A81307E0035ED40 /* Frameworks */,
-				B5F5BC912A81307E0035ED40 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5F5BC952A81307E0035ED40 /* PBXTargetDependency */,
-			);
-			name = "bag-chaserTests";
-			productName = "bag-chaserTests";
-			productReference = B5F5BC932A81307E0035ED40 /* bag-chaserTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B5F5BC9C2A81307E0035ED40 /* bag-chaserUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5F5BCAD2A81307E0035ED40 /* Build configuration list for PBXNativeTarget "bag-chaserUITests" */;
-			buildPhases = (
-				B5F5BC992A81307E0035ED40 /* Sources */,
-				B5F5BC9A2A81307E0035ED40 /* Frameworks */,
-				B5F5BC9B2A81307E0035ED40 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5F5BC9F2A81307E0035ED40 /* PBXTargetDependency */,
-			);
-			name = "bag-chaserUITests";
-			productName = "bag-chaserUITests";
-			productReference = B5F5BC9D2A81307E0035ED40 /* bag-chaserUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,16 +187,12 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					B52716962A861FDB00963AD7 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = B5F5BC822A81307D0035ED40;
+					};
 					B5F5BC822A81307D0035ED40 = {
 						CreatedOnToolsVersion = 14.3;
-					};
-					B5F5BC922A81307E0035ED40 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = B5F5BC822A81307D0035ED40;
-					};
-					B5F5BC9C2A81307E0035ED40 = {
-						CreatedOnToolsVersion = 14.3;
-						TestTargetID = B5F5BC822A81307D0035ED40;
 					};
 				};
 			};
@@ -232,13 +210,19 @@
 			projectRoot = "";
 			targets = (
 				B5F5BC822A81307D0035ED40 /* bag-chaser */,
-				B5F5BC922A81307E0035ED40 /* bag-chaserTests */,
-				B5F5BC9C2A81307E0035ED40 /* bag-chaserUITests */,
+				B52716962A861FDB00963AD7 /* bag-chaser-tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B52716952A861FDB00963AD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5F5BC812A81307D0035ED40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,23 +232,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5F5BC912A81307E0035ED40 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5F5BC9B2A81307E0035ED40 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B52716932A861FDB00963AD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B52716A62A8621AE00963AD7 /* spending.swift in Sources */,
+				B52716A92A86282F00963AD7 /* local_storage_helper.swift in Sources */,
+				B52716A72A8621B300963AD7 /* daily_spending.swift in Sources */,
+				B5BB598A2A88FC3A00203207 /* local_storage_helper_test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5F5BC7F2A81307D0035ED40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,36 +262,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5F5BC8F2A81307E0035ED40 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5F5BC992A81307E0035ED40 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B5F5BC952A81307E0035ED40 /* PBXTargetDependency */ = {
+		B527169C2A861FDB00963AD7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B5F5BC822A81307D0035ED40 /* bag-chaser */;
-			targetProxy = B5F5BC942A81307E0035ED40 /* PBXContainerItemProxy */;
-		};
-		B5F5BC9F2A81307E0035ED40 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B5F5BC822A81307D0035ED40 /* bag-chaser */;
-			targetProxy = B5F5BC9E2A81307E0035ED40 /* PBXContainerItemProxy */;
+			targetProxy = B527169B2A861FDB00963AD7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		B527169D2A861FDB00963AD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8P5ZFS9CK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raphael.bag-chaser-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bag-chaser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bag-chaser";
+			};
+			name = Debug;
+		};
+		B527169E2A861FDB00963AD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8P5ZFS9CK7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.raphael.bag-chaser-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bag-chaser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bag-chaser";
+			};
+			name = Release;
+		};
 		B5F5BCA52A81307E0035ED40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -483,85 +481,18 @@
 			};
 			name = Release;
 		};
-		B5F5BCAB2A81307E0035ED40 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8P5ZFS9CK7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raphael.bag-chaserTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bag-chaser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bag-chaser";
-			};
-			name = Debug;
-		};
-		B5F5BCAC2A81307E0035ED40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8P5ZFS9CK7;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raphael.bag-chaserTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bag-chaser.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bag-chaser";
-			};
-			name = Release;
-		};
-		B5F5BCAE2A81307E0035ED40 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8P5ZFS9CK7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raphael.bag-chaserUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "bag-chaser";
-			};
-			name = Debug;
-		};
-		B5F5BCAF2A81307E0035ED40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8P5ZFS9CK7;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.raphael.bag-chaserUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "bag-chaser";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B527169F2A861FDB00963AD7 /* Build configuration list for PBXNativeTarget "bag-chaser-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B527169D2A861FDB00963AD7 /* Debug */,
+				B527169E2A861FDB00963AD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B5F5BC7E2A81307D0035ED40 /* Build configuration list for PBXProject "bag-chaser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -576,24 +507,6 @@
 			buildConfigurations = (
 				B5F5BCA82A81307E0035ED40 /* Debug */,
 				B5F5BCA92A81307E0035ED40 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B5F5BCAA2A81307E0035ED40 /* Build configuration list for PBXNativeTarget "bag-chaserTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5F5BCAB2A81307E0035ED40 /* Debug */,
-				B5F5BCAC2A81307E0035ED40 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B5F5BCAD2A81307E0035ED40 /* Build configuration list for PBXNativeTarget "bag-chaserUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5F5BCAE2A81307E0035ED40 /* Debug */,
-				B5F5BCAF2A81307E0035ED40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
