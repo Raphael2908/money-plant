@@ -9,8 +9,9 @@ import SwiftUI
 
 @main
 struct bag_chaserApp: App {
+    @Environment(\.scenePhase) private var scenePhase
     
-    init() {
+    func App_Start() {
         let date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MM-yyyy"
@@ -24,13 +25,20 @@ struct bag_chaserApp: App {
             // If no, creates a new daily spending, stores in local storage, pass data into home
             let Today_Spending = Daily_Spending(receipts: [])
             LS.save(data: Today_Spending, key: storage_key)
-            
         }
+    }
+    
+    init() {
+       App_Start()
      }
     
     var body: some Scene {
         WindowGroup {
             Home()
-        }
+        }.onChange(of: scenePhase, perform: {phase in
+            if phase == .active{
+                App_Start()
+            }
+        })
     }
 }
