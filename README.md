@@ -23,7 +23,7 @@ Todo for release
 Improvements (required for release)
 - [X] Improve Display UI
 - [X] Improve Edit spending from UI
-- [ ] Tests
+- [X] Tests
 
 Backlog
 - [ ] See past daily spending (epic)
