@@ -41,17 +41,18 @@ struct Spending_Card: View {
             Divider()
             
             Text("Total: $\(total, specifier: "%.2f")")
-                .padding(EdgeInsets(top: 0, leading: 12, bottom: 12, trailing: 0))
+                .padding(
+                    EdgeInsets(top: 0, leading: 12, bottom: 12, trailing: 0)
+                )
                 .font(
                     .system(size: 18, weight: .semibold, design: .rounded)
-                ).foregroundColor(colorScheme == .light ? Color(UIColor.darkText) : .white)
-                
+                )
         }.frame(
             maxWidth: .infinity,
             alignment: .leading
-        ).background(
-            colorScheme == .light ? .white: Color(UIColor.systemGray6)
-        ).cornerRadius(5).padding(10)
+        )
+        .cornerRadius(5)
+        .foregroundColor(Color.theme.text)
       
     }
 }
