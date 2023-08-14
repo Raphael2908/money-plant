@@ -70,8 +70,8 @@ struct Edit_Spending_Card: View {
                 }
                 
                 Section{
-                    Toggle("Gst", isOn: $have_gst)
-                    Toggle("Service Charge", isOn: $have_service_charge)
+                    Toggle("Gst", isOn: $have_gst).tint(Color.theme.accent)
+                    Toggle("Service Charge", isOn: $have_service_charge).tint(Color.theme.accent)
                     if(have_service_charge){
                         TextField(
                             "Service Charge",
@@ -113,7 +113,7 @@ struct Edit_Spending_Card: View {
                     Text("Edit Spending").frame(maxWidth: .infinity).multilineTextAlignment(.center)
                 }).disabled(!disableForm)
 
-            }.navigationTitle("Edit Spending")
+            }.navigationTitle("Edit Spending").background(Color.theme.background)
         }
         
     }
