@@ -16,7 +16,7 @@ Done
 
 Todo for release
 - [X] Introduction screen (feat)
-- [ ] App logo (feat)
+- [X] App logo (feat)
 - [X] App color theme
       
 Improvements (required for release)
