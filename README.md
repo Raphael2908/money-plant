@@ -15,10 +15,10 @@ Done
 - [X] ✨ No sign up needed ✨      
 
 Todo for release
-- [ ] Introduction screen (feat)
+- [X] Introduction screen (feat)
 - [ ] App settings (feat)
 - [ ] App logo (feat)
-- [ ] App color theme
+- [X] App color theme
       
 Improvements (required for release)
 - [X] Improve Display UI
