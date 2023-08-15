@@ -29,3 +29,7 @@ Backlog
 - [ ] Set a budget for the day (epic)
 - [ ] Backend to store data in the cloud (epic)
 - [ ] Optional authentication (epic)
+
+
+# privacy policy 
+This app does not collect any data. All data is stored locally on your ios device. Deleting the app will erase all data related to the app.
