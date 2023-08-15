@@ -16,6 +16,7 @@ struct Home: View {
     let dateFormatter = DateFormatter()
     var storage_key: String
     
+    @AppStorage("notWelcomed") var showWelcomeScreen: Bool = true
     @State var today_total_spending: Float
     @State private var isShowingSheet = false
 
@@ -28,34 +29,41 @@ struct Home: View {
     }
     
     var body: some View {
-        VStack {
-            Text(Date(), style: .date)
-                .padding(10)
-                .foregroundColor(Color.theme.text)
-            Text("Today's Spending")
-                .foregroundColor(Color.theme.text)
-                .font(.largeTitle)
-            Text("$\(today_total_spending, specifier: "%.2f")")
-                .font(.title)
-                .foregroundColor(Color.theme.text)
+        
+        NavigationStack{
+            VStack {
+                Text(Date(), style: .date)
+                    .padding(10)
+                    .foregroundColor(Color.theme.text)
+                Text("Today's Spending")
+                    .foregroundColor(Color.theme.text)
+                    .font(.largeTitle)
+                Text("$\(today_total_spending, specifier: "%.2f")")
+                    .font(.title)
+                    .foregroundColor(Color.theme.text)
 
-            Divider()
-            
-            Display_Spending(today_total_spending: $today_total_spending)
+                Divider()
+                
+                Display_Spending(today_total_spending: $today_total_spending)
 
-            Button(action: {
-                isShowingSheet.toggle()
-            }, label: {
-                Text("Add Spending")
-                    .frame(width: 280, height: 50)
-                    .background(Color.theme.accent)
-                    .foregroundColor(Color.theme.buttonText)
-                    .font(.system(size: 24, weight: .bold, design: .default))
-                    .cornerRadius(10)
-            }).sheet(isPresented: $isShowingSheet) {
-                Add_Spending_Card(storage_key: storage_key, today_total_spending: $today_total_spending,isShowingSheet: $isShowingSheet )
+                Button(action: {
+                    isShowingSheet.toggle()
+                }, label: {
+                    Text("Add Spending")
+                        .frame(width: 280, height: 50)
+                        .background(Color.theme.accent)
+                        .foregroundColor(Color.theme.buttonText)
+                        .font(.system(size: 24, weight: .bold, design: .default))
+                        .cornerRadius(10)
+                }).sheet(isPresented: $isShowingSheet) {
+                    Add_Spending_Card(storage_key: storage_key, today_total_spending: $today_total_spending,isShowingSheet: $isShowingSheet )
+                }
             }
-        }.background(Color.theme.background)
+            .background(Color.theme.background)
+            .fullScreenCover(isPresented: $showWelcomeScreen, content: {
+                Welcome(showWelcomeScreen: $showWelcomeScreen)
+            })
+        }
     }
     
 }

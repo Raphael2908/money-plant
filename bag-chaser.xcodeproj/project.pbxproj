@@ -12,6 +12,7 @@
 		B52716A72A8621B300963AD7 /* daily_spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FA82A82BD1400D06630 /* daily_spending.swift */; };
 		B52716A92A86282F00963AD7 /* local_storage_helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5F5BCB02A8157A50035ED40 /* local_storage_helper.swift */; };
 		B55C06BD2A89DB3700A65B00 /* colour.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C06BC2A89DB3700A65B00 /* colour.swift */; };
+		B55C06BF2A8A74FA00A65B00 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55C06BE2A8A74FA00A65B00 /* Welcome.swift */; };
 		B58C9FA72A82BCCD00D06630 /* AddSpending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FA62A82BCCD00D06630 /* AddSpending.swift */; };
 		B58C9FA92A82BD1400D06630 /* daily_spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FA82A82BD1400D06630 /* daily_spending.swift */; };
 		B58C9FAB2A82BD2900D06630 /* spending.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58C9FAA2A82BD2900D06630 /* spending.swift */; };
@@ -40,6 +41,7 @@
 		B52716972A861FDB00963AD7 /* bag-chaser-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bag-chaser-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52716A02A86200B00963AD7 /* local_storage_helper_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = local_storage_helper_test.swift; sourceTree = "<group>"; };
 		B55C06BC2A89DB3700A65B00 /* colour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colour.swift; sourceTree = "<group>"; };
+		B55C06BE2A8A74FA00A65B00 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
 		B58C9FA62A82BCCD00D06630 /* AddSpending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSpending.swift; sourceTree = "<group>"; };
 		B58C9FA82A82BD1400D06630 /* daily_spending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daily_spending.swift; sourceTree = "<group>"; };
 		B58C9FAA2A82BD2900D06630 /* spending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spending.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				B58C9FAC2A82C10F00D06630 /* DisplaySpending.swift */,
 				B5F605262A837FA10029D991 /* EditSpending.swift */,
 				B518F4BD2A84B7650025F7E1 /* SpendingCard.swift */,
+				B55C06BE2A8A74FA00A65B00 /* Welcome.swift */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				B58C9FA92A82BD1400D06630 /* daily_spending.swift in Sources */,
 				B5F5BC872A81307D0035ED40 /* bag_chaserApp.swift in Sources */,
 				B58C9FAD2A82C11000D06630 /* DisplaySpending.swift in Sources */,
+				B55C06BF2A8A74FA00A65B00 /* Welcome.swift in Sources */,
 				B58C9FAB2A82BD2900D06630 /* spending.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
